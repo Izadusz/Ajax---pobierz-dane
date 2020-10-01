@@ -13,7 +13,8 @@ const getData = () => {
             attrNode.value = 'dane-programisty';
             divData.setAttributeNode(attrNode);
 
-            divData.innerText = `Dane programisty: ${data}`;
+            divData.innerText = `Dane programisty: ${data.imie} ${data.nazwisko} , zawód: ${data.zawod}, firma: ${data.firma}`;
+             
 
             document.body.appendChild(divData);
 
